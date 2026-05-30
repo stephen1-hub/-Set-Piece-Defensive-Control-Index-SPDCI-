@@ -40,6 +40,25 @@ SPDCI breaks this process into measurable components.
 
 # 🧠 Framework Architecture
 
+# 🧮 SPDCI Calculation
+
+The final Set-Piece Defensive Control Index combines all three defensive phases:
+
+SPDCI = (0.40 × DHSS) + (0.35 × FCCI) + (0.25 × SBCM)
+
+
+### Weighting Logic
+
+| Component | Weight | Reason |
+|---|---:|---|
+| DHSS | 40% | Preventing dangerous deliveries reduces threat before contact occurs |
+| FCCI | 35% | Winning the first action prevents immediate danger |
+| SBCM | 25% | Controlling second phases prevents sustained pressure |
+
+The final score ranges from 0–100.
+
+Higher SPDCI indicates stronger overall corner defensive control.
+
 
 ## 1️⃣ Delivery Hotspot Suppression System (DHSS)
 
@@ -138,36 +157,45 @@ This allows analysts to identify where defensive breakdowns occur.
 
 # 📈 Example Insights
 
-A team can have different defensive profiles:
+# 📈 Case Study: La Liga Sample Analysis
 
-## Team A
+The model was tested on StatsBomb event data from La Liga matches.
 
-High DHSS  
-High FCCI  
-High SBCM  
+### SPDCI Rankings (Sample)
 
-✔ Complete set-piece control
-
-
-## Team B
-
-High FCCI  
-Low SBCM  
-
-✔ Wins initial contact  
-❌ Allows second-phase pressure
+| Team | DHSS | FCCI | SBCM | SPDCI |
+|---|---:|---:|---:|---:|
+| Getafe | 25.0 | 100.0 | 100.0 | 70.0 |
+| Real Betis | 35.7 | 83.3 | 83.3 | 64.3 |
+| Deportivo Alavés | 51.3 | 83.3 | 41.7 | 60.1 |
+| Barcelona | 32.9 | 76.7 | 31.8 | 47.9 |
+| Real Madrid | 19.2 | 50.0 | 40.0 | 35.2 |
 
 
-## Team C
+## Tactical Findings
 
-Low DHSS  
-High SBCM  
+### Barcelona Profile
 
-❌ Allows dangerous deliveries  
-✔ Recovers well afterwards
+Strong:
+✔ First-contact dominance (76.7 FCCI)
 
----
+Weakness:
+⚠ Lower second-phase control (31.8 SBCM)
 
+Interpretation:
+
+Barcelona frequently won the initial action but opponents were able to continue some second-phase attacks.
+
+
+### Real Betis Profile
+
+Strong:
+✔ First-contact control  
+✔ Second-ball recovery
+
+Interpretation:
+
+Real Betis showed strong ability to neutralize chaos after deliveries.
 # 🖥 Streamlit Dashboard
 
 The interactive dashboard includes:
@@ -196,6 +224,18 @@ The interactive dashboard includes:
 
 - Second phase control
 - Recovery analysis
+
+  # 📸 Dashboard Preview
+
+Dashboard features:
+
+- SPDCI league rankings
+- Team defensive profiles
+- DHSS/FCCI/SBCM breakdown
+- Interactive team comparison
+- Tactical interpretation reports
+
+(Screenshots to be added)
 
 ---
 
@@ -261,6 +301,17 @@ This project demonstrates:
 - Custom metric development
 - Football tactical modelling
 - Interactive dashboard creation
+
+# ⚠️ Limitations
+
+Current model limitations:
+
+- Analysis uses available StatsBomb open-data matches, not every league fixture
+- Small samples can inflate percentage-based metrics
+- Current model does not adjust for opponent delivery quality
+- Player-level responsibility is not included yet
+
+Future versions will address these areas.
 
 ---
 
