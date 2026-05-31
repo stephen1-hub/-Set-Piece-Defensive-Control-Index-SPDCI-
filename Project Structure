@@ -1,0 +1,26 @@
+SPDCI/
+│
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── notebooks/
+│ ├── 01_DHSS_Model.ipynb
+│ ├── 02_FCCI_Model.ipynb
+│ ├── 03_SBCM_Model.ipynb
+│ └── 04_SPDCI_Framework.ipynb
+│
+├── src/
+│ ├── data_loader.py
+│ ├── dhss.py
+│ ├── fcci.py
+│ ├── sbcm.py
+│ └── spdci.py
+│
+├── dashboard/
+│ └── app36.py
+│
+├── README.md
+└── requirements.txt
+
+---
