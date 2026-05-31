@@ -228,7 +228,7 @@ The interactive dashboard includes:
 
   # 📸 Dashboard Preview
 
-Dashboard features:
+Dashboard features: 
 
 - SPDCI league rankings
 - Team defensive profiles
@@ -236,8 +236,8 @@ Dashboard features:
 - Interactive team comparison
 - Tactical interpretation reports
 
-(Screenshots to be added)
-
+Live Demo
+https://jmk8xca6jye2pllqcucnwk.streamlit.app/
 ---
 
 # 🛠 Technology Stack
