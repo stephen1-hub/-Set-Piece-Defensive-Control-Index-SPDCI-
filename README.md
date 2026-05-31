@@ -58,6 +58,7 @@ SPDCI = (0.40 × DHSS) + (0.35 × FCCI) + (0.25 × SBCM)
 The final score ranges from 0–100.
 
 Higher SPDCI indicates stronger overall corner defensive control.
+Weights are based on the chronological importance of each defensive phase and can be adjusted depending on tactical philosophy."
 
 
 ## 1️⃣ Delivery Hotspot Suppression System (DHSS)
