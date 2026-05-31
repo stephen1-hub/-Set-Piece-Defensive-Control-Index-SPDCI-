@@ -27,7 +27,7 @@ st.set_page_config(
 def load_data():
 
     df = pd.read_csv(
-        "data/spdci_summary.csv"
+        "spdci_summary.csv"
     )
 
     return df
@@ -75,7 +75,7 @@ st.title(
 
 st.markdown(
 """
-### A multi-phase framework for evaluating corner defensive performance
+### A multi-phase framework for evaluating corner defensive performance la liga 2020/2021 Season
 
 SPDCI evaluates **where teams gain or lose control** during set-piece defending.
 
