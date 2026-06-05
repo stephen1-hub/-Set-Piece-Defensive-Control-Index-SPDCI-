@@ -17,6 +17,9 @@ The model analyzes corner defense through three connected phases:
 Corner Delivery → First Contact → Second Ball Control
 
 ---
+## Live Dashboard
+https://jmk8xca6jye2pllqcucnwk.streamlit.app/
+
 
 # 🎯 Project Objective
 
@@ -236,8 +239,7 @@ Dashboard features:
 - Interactive team comparison
 - Tactical interpretation reports
 
-Live Demo
-https://jmk8xca6jye2pllqcucnwk.streamlit.app/
+
 ---
 
 # 🛠 Technology Stack
